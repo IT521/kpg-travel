@@ -19,17 +19,17 @@ export function Home() {
                 <ul>
                     <li>
                         <figure>
-                            {/* Photo by Stefan Fluck on Unsplash */}
+                            {/* Photo by Matthew Smith on Unsplash */}
                             <img
-                                src="https://images.unsplash.com/photo-1581012771300-224937651c42"
-                                alt="Airplane"
+                                src="https://images.unsplash.com/photo-1421789497144-f50500b5fcf0"
+                                alt="Flights"
                             />
                             <figcaption>
                                 <h3>Flights</h3>
                             </figcaption>
                         </figure>
                         <p>Compare and book flights with ease</p>
-                        <Link to="/home">Flights</Link>
+                        <Link to="/flights">Flights</Link>
                     </li>
                     <li>
                         <figure>

@@ -4,19 +4,19 @@
 
 /* Styles for the hero image */
 .hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(pixel-to-rem(240px), 1fr));
+    align-items: center;
+    padding: 4rem 2rem;
+
     /* Photo by Pedro Monteiro on Unsplash */
     background: url('https://images.unsplash.com/photo-1515238152791-8216bfdf89a7')
         center;
     background-size: cover;
-    padding: 4rem 2rem;
-    /* grid styles */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(pixel-to-rem(240px), 1fr));
-    align-items: center;
 
-    &.about {
-        /* Photo by Gonzalo Pedroviejo Gómez on Unsplash */
-        background: url('https://images.unsplash.com/photo-1644512078177-f6708997183a')
+    &.flights {
+        /* Photo by Matthew Smith on Unsplash */
+        background: url('https://images.unsplash.com/photo-1421789497144-f50500b5fcf0')
             center;
         background-size: cover;
     }
@@ -92,6 +92,39 @@
             }
         }
     }
+
+    & .flights {
+        background-color: $kpg-light-background-color;
+        background-size: cover;
+        padding: 4rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(pixel-to-rem(240px), 1fr)
+        );
+        align-items: center;
+        position: relative;
+
+        & .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $kpg-color-red;
+            width: 100%;
+
+            & h3 {
+                color: white;
+                padding: 0.75rem;
+                font-size: 1.25rem;
+                text-align: center;
+            }
+        }
+        & iframe {
+            border: none;
+            width: 100%;
+            min-height: pixel-to-rem(590px);
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -112,6 +145,23 @@
             minmax(pixel-to-rem(320px), 1fr)
         );
         margin-left: -24%;
+    }
+    .widgets .flights {
+        display: block;
+        background: none;
+        padding: 0;
+        grid-template-columns: auto;
+        position: static;
+
+        & .caption {
+            display: none;
+        }
+    }
+    .widgets .flights iframe {
+        min-height: pixel-to-rem(575px);
+    }
+    .widgets .flights .caption {
+        display: none;
     }
 }
 
