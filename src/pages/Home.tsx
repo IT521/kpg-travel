@@ -47,9 +47,9 @@ export function Home() {
                     </li>
                     <li>
                         <figure>
-                            {/* Photo by Ivana Cajina on Unsplash */}
+                            {/* Photo by Carles Rabada on Unsplash */}
                             <img
-                                src="https://images.unsplash.com/photo-1543465077-db45d34b88a5"
+                                src="https://images.unsplash.com/photo-1570636802145-8cda1335fe54"
                                 alt="cars"
                             />
                             <figcaption>

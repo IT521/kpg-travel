@@ -12,7 +12,8 @@ export function Flights() {
                     </p>
                 </article>
             </section>
-            <section className="widgets" id="widgets">
+            <section className="widgets flex" id="widgets">
+                <div className="date">Date Format: DD/MM/YYYY</div>
                 <div className="flights">
                     <iframe
                         title="Flights"
