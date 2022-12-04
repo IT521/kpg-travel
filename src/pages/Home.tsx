@@ -10,7 +10,7 @@ export function Home() {
                 <article>
                     <p>
                         <strong>KPG Travel</strong> is an Independent Travel
-                        Agent providing competitive rates, destination events,
+                        Advisor providing competitive rates, destination events,
                         insider travel knowledge, and full service support.
                     </p>
                 </article>
@@ -59,7 +59,7 @@ export function Home() {
                         <p>
                             Compare deals from the biggest car rental companies
                         </p>
-                        <Link to="/home">Car Rentals</Link>
+                        <Link to="/cars">Car Rentals</Link>
                     </li>
                 </ul>
             </section>

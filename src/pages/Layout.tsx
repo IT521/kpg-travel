@@ -11,6 +11,9 @@ export function Layout() {
                     <li>
                         <Link to="/flights">Flights</Link>
                     </li>
+                    <li>
+                        <Link to="/cars">Car Rentals</Link>
+                    </li>
                 </ul>
             </nav>
 

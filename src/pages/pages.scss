@@ -18,7 +18,12 @@
         /* Photo by Matthew Smith on Unsplash */
         background: url('https://images.unsplash.com/photo-1421789497144-f50500b5fcf0')
             center;
-        background-size: cover;
+    }
+
+    &.cars {
+        /* Photo by Ivana Cajina on Unsplash */
+        background: url('https://images.unsplash.com/photo-1543465077-db45d34b88a5')
+            center;
     }
 
     & * {
@@ -93,7 +98,8 @@
         }
     }
 
-    & .flights {
+    & .flights,
+    & .cars {
         background-color: $kpg-light-background-color;
         background-size: cover;
         padding: 4rem 2rem;
@@ -146,21 +152,25 @@
         );
         margin-left: -24%;
     }
-    .widgets .flights {
-        display: block;
+    .widgets .flights,
+    .widgets .cars {
+        display: flex;
         background: none;
-        padding: 0;
         grid-template-columns: auto;
         position: static;
-
-        & .caption {
-            display: none;
-        }
+        padding: 0;
+        justify-content: center;
     }
-    .widgets .flights iframe {
+    .widgets .flights iframe,
+    .widgets .cars iframe {
         min-height: pixel-to-rem(575px);
+        width: fit-content;
     }
-    .widgets .flights .caption {
+    .widgets .cars iframe {
+        min-height: pixel-to-rem(675px);
+    }
+    .widgets .flights .caption,
+    .widgets .cars .caption {
         display: none;
     }
 }
