@@ -26,6 +26,12 @@
             center;
     }
 
+    &.stays {
+        /* Photo by Sasha Kaunas on Unsplash */
+        background: url('https://images.unsplash.com/photo-1584132967334-10e028bd69f7')
+            center;
+    }
+
     & * {
         color: white;
     }
@@ -107,6 +113,72 @@
         }
     }
 
+    &.stays {
+        display: grid;
+        grid-template-columns: 1fr fit-content(160px) 1fr;
+        grid-gap: 1rem;
+
+        & .fly-away {
+            border: pixel-to-rem(1px) solid $kpg-border-color;
+            border-radius: 0.5rem;
+            padding: 1rem;
+
+            & iframe {
+                border: none;
+                width: 100%;
+                min-height: pixel-to-rem(375px);
+            }
+        }
+
+        & .points {
+            min-height: pixel-to-rem(620px);
+            width: 100%;
+            & a {
+                margin: 0;
+                background-color: white;
+            }
+        }
+
+        & .hotels {
+            border: pixel-to-rem(1px) solid $kpg-border-color;
+            border-radius: 0.5rem;
+            padding: 1rem;
+
+            & figure {
+                min-height: pixel-to-rem(225px);
+                overflow: hidden;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                position: relative;
+
+                & img {
+                    width: 100%;
+                }
+
+                & figcaption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $kpg-figcaption-background-color;
+                    width: 100%;
+
+                    & h3 {
+                        color: white;
+                        padding: 0.75rem;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+            & .caption {
+                margin-left: 5%;
+
+                & a {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
     & .flights,
     & .cars {
         display: flex;
@@ -174,6 +246,13 @@
     .widgets .flights .caption,
     .widgets .cars .caption {
         display: none;
+    }
+    .widgets.stays {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .widgets.stays .hotels .caption {
+        margin: 0;
     }
 }
 

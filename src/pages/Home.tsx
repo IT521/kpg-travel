@@ -43,7 +43,7 @@ export function Home() {
                             </figcaption>
                         </figure>
                         <p>Book your flights and accommodation together</p>
-                        <Link to="/home">Flights + Hotel</Link>
+                        <Link to="/stays">Flights + Hotel</Link>
                     </li>
                     <li>
                         <figure>

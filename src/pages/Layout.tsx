@@ -12,6 +12,9 @@ export function Layout() {
                         <Link to="/flights">Flights</Link>
                     </li>
                     <li>
+                        <Link to="/stays">Flights + Hotel</Link>
+                    </li>
+                    <li>
                         <Link to="/cars">Car Rentals</Link>
                     </li>
                 </ul>
@@ -23,8 +26,8 @@ export function Layout() {
 
             <footer>
                 <p>
-                    &copy; {new Date().getFullYear()} KPG Travel, LLC. All
-                    rights reserved.
+                    &copy; {new Date().getFullYear()} KPG Travel. All rights
+                    reserved.
                 </p>
             </footer>
         </div>
