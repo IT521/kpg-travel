@@ -80,6 +80,8 @@
 
                 & img {
                     width: 100%;
+                    -webkit-user-select: none;
+                    user-select: none;
                 }
 
                 & figcaption {
@@ -153,6 +155,8 @@
 
                 & img {
                     width: 100%;
+                    -webkit-user-select: none;
+                    user-select: none;
                 }
 
                 & figcaption {
@@ -210,6 +214,35 @@
     }
 }
 
+#travel-widgets {
+    & figure {
+        max-height: pixel-to-rem(623px);
+
+        & img {
+            height: pixel-to-rem(623px);
+        }
+
+        & .tooltip {
+            & .tooltip-text {
+                display: none;
+                color: #fff;
+                text-align: center;
+
+                position: absolute;
+                bottom: 12%;
+                left: 0;
+                margin-left: pixel-to-rem(12px);
+            }
+
+            &:hover {
+                & .tooltip-text {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -253,6 +286,10 @@
     }
     .widgets.stays .hotels .caption {
         margin: 0;
+    }
+
+    #travel-widgets figure img {
+        height: 100%;
     }
 }
 

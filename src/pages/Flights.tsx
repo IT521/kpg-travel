@@ -1,5 +1,7 @@
 import './pages.scss';
 
+import { Widgets } from '../components';
+
 export function Flights() {
     return (
         <main className="wrapper">
@@ -25,6 +27,7 @@ export function Flights() {
                     </div>
                 </div>
             </section>
+            <Widgets />
         </main>
     );
 }

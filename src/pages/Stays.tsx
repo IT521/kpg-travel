@@ -1,5 +1,7 @@
 import './pages.scss';
 
+import { Widgets } from '../components';
+
 export function Stays() {
     return (
         <main className="wrapper">
@@ -60,6 +62,7 @@ export function Stays() {
                     </div>
                 </div>
             </section>
+            <Widgets />
         </main>
     );
 }
