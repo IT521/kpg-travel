@@ -290,6 +290,12 @@
 
     #travel-widgets figure img {
         height: 100%;
+        min-height: pixel-to-rem(312px);
+    }
+    #travel-widgets figure .tooltip:hover {
+        .tooltip-text {
+            display: none;
+        }
     }
 }
 

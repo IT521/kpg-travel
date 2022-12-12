@@ -11,7 +11,7 @@ const FIGURES: Array<FigureInterface> = [
     {
         id: 'uae-1000',
         src: 'https://images.unsplash.com/photo-1546412414-e1885259563a',
-        alt: 'Burj Al Arab Jumeirah, Dubai, United Arab Emirates',
+        alt: 'Burj Al Arab Jumeirah, Dubai, UAE',
         credit: 'Photo by Darcey Beau on Unsplash',
         caption: 'Travel United Arab Emirates',
     },
@@ -25,7 +25,7 @@ const FIGURES: Array<FigureInterface> = [
     {
         id: 'greece-1000',
         src: 'https://images.pexels.com/photos/12766007/pexels-photo-12766007.jpeg',
-        alt: 'White and Blue Dome Building in Thera, Greece',
+        alt: 'White and Blue Dome Building, Thera, Greece',
         credit: 'Photo by Giannis Osep on Pexels',
         caption: 'Travel Greece',
     },
