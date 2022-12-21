@@ -9,9 +9,12 @@ export function Home() {
                 <h1>Need travel?</h1>
                 <article>
                     <p>
-                        <strong>KPG Travel</strong> is an Independent Travel
+                        {/* <strong>KPG Travel</strong> is an Independent Travel
                         Advisor providing competitive rates, destination events,
-                        insider travel knowledge, and full service support.
+                        insider travel knowledge, and full service support. */}
+                        Discover Your Dream Destination with&nbsp;
+                        <strong>KPG Travel</strong>&#8230; your Trusted Travel
+                        Adviser for Affordable Flights, Hotels, and Rental Cars
                     </p>
                 </article>
             </section>

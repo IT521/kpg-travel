@@ -39,4 +39,36 @@ footer {
     color: white;
     text-align: center;
     font-size: 0.75rem;
+
+    & .logo {
+        position: relative;
+
+        & .tooltip {
+            background-color: transparent;
+            border: none;
+            font-size: inherit;
+
+            & .tooltip-text {
+                display: none;
+                color: white;
+
+                position: absolute;
+                top: 75%;
+                left: 50%;
+                margin-left: pixel-to-rem(12px);
+            }
+
+            &:hover {
+                & .tooltip-text {
+                    display: block;
+                }
+            }
+
+            & svg {
+                color: $pinterest-red;
+                fill: currentColor;
+                stroke-width: 0;
+            }
+        }
+    }
 }

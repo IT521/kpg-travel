@@ -17,11 +17,7 @@ export function Flights() {
             <section className="widgets flex" id="widgets">
                 <div className="date">Date Format: DD/MM/YYYY</div>
                 <div className="flights">
-                    <iframe
-                        title="Flights"
-                        src="flights.html"
-                        scrolling="no"
-                    ></iframe>
+                    <iframe title="Flights" src="flights.html"></iframe>
                     <div className="caption">
                         <h3>Book your flight with confidence</h3>
                     </div>

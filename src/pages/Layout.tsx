@@ -1,5 +1,7 @@
 import { Link, Outlet } from 'react-router-dom';
 
+import { PinterestLogo } from '../components';
+
 export function Layout() {
     return (
         <div>
@@ -29,6 +31,9 @@ export function Layout() {
                     &copy; {new Date().getFullYear()} KPG Travel. All rights
                     reserved.
                 </p>
+                <div className="social">
+                    <PinterestLogo />
+                </div>
             </footer>
         </div>
     );

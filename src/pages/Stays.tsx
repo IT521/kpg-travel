@@ -16,11 +16,7 @@ export function Stays() {
             </section>
             <section className="widgets stays" id="widgets">
                 <div className="fly-away">
-                    <iframe
-                        title="Flights"
-                        src="way-away.html"
-                        scrolling="no"
-                    ></iframe>
+                    <iframe title="Flights" src="way-away.html"></iframe>
                     <div className="caption">
                         <h3>Book your Flight</h3>
                     </div>

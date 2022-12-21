@@ -14,11 +14,7 @@ export function Rentals() {
             </section>
             <section className="widgets" id="widgets">
                 <div className="cars">
-                    <iframe
-                        title="Car Rentals"
-                        src="cars.html"
-                        scrolling="no"
-                    ></iframe>
+                    <iframe title="Car Rentals" src="cars.html"></iframe>
                     <div className="caption">
                         <h3>Reserve a Vehicle</h3>
                     </div>

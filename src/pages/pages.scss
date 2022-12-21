@@ -127,6 +127,7 @@
 
             & iframe {
                 border: none;
+                overflow: hidden;
                 width: 100%;
                 min-height: pixel-to-rem(375px);
             }
@@ -208,6 +209,7 @@
         }
         & iframe {
             border: none;
+            overflow: hidden;
             width: 100%;
             min-height: pixel-to-rem(590px);
         }
