@@ -61,10 +61,9 @@
     & ul {
         list-style-type: none;
         display: grid;
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax(pixel-to-rem(320px), 1fr)
-        );
+        grid-template-columns:
+            minmax(pixel-to-rem(320px), 1fr) minmax(pixel-to-rem(320px), 1fr)
+            minmax(pixel-to-rem(320px), 1fr);
         grid-gap: 1rem;
 
         & li {
