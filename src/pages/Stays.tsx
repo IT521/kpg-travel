@@ -1,5 +1,6 @@
 import './pages.scss';
 
+import hotelRoom from '../assets/photos/hotel-room.jpg';
 import { Widgets } from '../components';
 
 export function Stays() {
@@ -37,11 +38,8 @@ export function Stays() {
                 </div>
                 <div className="hotels">
                     <figure>
-                        {/* Photo by Point3D Commercial Imaging Ltd on Unsplash */}
-                        <img
-                            src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658"
-                            alt="hotel room"
-                        />
+                        {/* Photo by Point3D Commercial Imaging Ltd at https://images.unsplash.com/photo-1631049552057-403cdb8f0658 */}
+                        <img src={hotelRoom} alt="hotel room" />
                         <figcaption>
                             <h3>Exclusive Hotel Deals</h3>
                         </figcaption>
