@@ -11,20 +11,20 @@ export function Layout() {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/stays">Flights + Hotel</Link>
-                    </li>
-                    <li>
-                        <a href="https://terryfrancis.inteletravel.com/">
-                            Villas
-                        </a>
-                    </li>
-                    <li>
                         <a href="https://terryfrancis.inteletravel.com/">
                             Cruises
                         </a>
                     </li>
                     <li>
                         <Link to="/flights">Flights</Link>
+                    </li>
+                    <li>
+                        <Link to="/stays">Flights + Hotel</Link>
+                    </li>
+                    <li>
+                        <a href="https://terryfrancis.inteletravel.com/">
+                            Villas
+                        </a>
                     </li>
                     <li>
                         <Link to="/cars">Car Rentals</Link>

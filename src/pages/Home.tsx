@@ -27,30 +27,6 @@ export function Home() {
                 <ul>
                     <li>
                         <figure>
-                            {/* Photo by Sasha Kaunas at https://images.unsplash.com/photo-1584132967334-10e028bd69f7 */}
-                            <img src={resort} alt="resort pool" />
-                            <figcaption>
-                                <h3>Flights + Hotel</h3>
-                            </figcaption>
-                        </figure>
-                        <p>Book your flights and accommodation together</p>
-                        <Link to="/stays">Flights + Hotel</Link>
-                    </li>
-                    <li>
-                        <figure>
-                            {/* Photo by Ciudad Maderas at https://images.unsplash.com/photo-1564501049412-61c2a3083791 */}
-                            <img src={villa} alt="villa" />
-                            <figcaption>
-                                <h3>Villas</h3>
-                            </figcaption>
-                        </figure>
-                        <p>Find a villa that you'll love</p>
-                        <a href="https://terryfrancis.inteletravel.com/">
-                            Villas
-                        </a>
-                    </li>
-                    <li>
-                        <figure>
                             {/* Photo by Adam Gonzales at https://images.unsplash.com/photo-1588151626366-a2df693aa0a7 */}
                             <img src={cruiseShip} alt="cruise ship" />
                             <figcaption>
@@ -72,6 +48,30 @@ export function Home() {
                         </figure>
                         <p>Compare and book flights with ease</p>
                         <Link to="/flights">Flights</Link>
+                    </li>
+                    <li>
+                        <figure>
+                            {/* Photo by Sasha Kaunas at https://images.unsplash.com/photo-1584132967334-10e028bd69f7 */}
+                            <img src={resort} alt="resort pool" />
+                            <figcaption>
+                                <h3>Flights + Hotel</h3>
+                            </figcaption>
+                        </figure>
+                        <p>Book your flights and accommodation together</p>
+                        <Link to="/stays">Flights + Hotel</Link>
+                    </li>
+                    <li>
+                        <figure>
+                            {/* Photo by Ciudad Maderas at https://images.unsplash.com/photo-1564501049412-61c2a3083791 */}
+                            <img src={villa} alt="villa" />
+                            <figcaption>
+                                <h3>Villas</h3>
+                            </figcaption>
+                        </figure>
+                        <p>Find a villa that you'll love</p>
+                        <a href="https://terryfrancis.inteletravel.com/">
+                            Villas
+                        </a>
                     </li>
                     <li>
                         <figure>
