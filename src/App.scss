@@ -65,9 +65,11 @@ footer {
             }
 
             & svg {
-                color: $pinterest-red;
-                fill: currentColor;
                 stroke-width: 0;
+
+                & path {
+                    fill: $pinterest-red;
+                }
             }
         }
     }
