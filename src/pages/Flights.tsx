@@ -14,10 +14,15 @@ export function Flights() {
                     </p>
                 </article>
             </section>
-            <section className="widgets flex" id="widgets">
-                <div className="date">Date Format: DD/MM/YYYY</div>
+            <section className="widgets" id="widgets">
                 <div className="flights">
-                    <iframe title="Flights" src="flights.html"></iframe>
+                    <div className="flex">
+                        <iframe title="Flights" src="way-away.html"></iframe>
+                    </div>
+                    <div className="flex">
+                        <div className="date">Date Format: DD/MM/YYYY</div>
+                        <iframe title="Flights" src="flights.html"></iframe>
+                    </div>
                     <div className="caption">
                         <h3>Book your flight with confidence</h3>
                     </div>

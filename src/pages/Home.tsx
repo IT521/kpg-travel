@@ -54,11 +54,11 @@ export function Home() {
                             {/* Photo by Sasha Kaunas at https://images.unsplash.com/photo-1584132967334-10e028bd69f7 */}
                             <img src={resort} alt="resort pool" />
                             <figcaption>
-                                <h3>Flights + Hotel</h3>
+                                <h3>Hotels</h3>
                             </figcaption>
                         </figure>
                         <p>Book your flights and accommodation together</p>
-                        <Link to="/stays">Flights + Hotel</Link>
+                        <Link to="/stays">Hotels</Link>
                     </li>
                     <li>
                         <figure>

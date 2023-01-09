@@ -19,7 +19,7 @@ export function Layout() {
                         <Link to="/flights">Flights</Link>
                     </li>
                     <li>
-                        <Link to="/stays">Flights + Hotel</Link>
+                        <Link to="/stays">Hotels</Link>
                     </li>
                     <li>
                         <a href="https://terryfrancis.inteletravel.com/">

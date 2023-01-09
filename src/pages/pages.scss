@@ -101,35 +101,12 @@
         }
     }
 
-    &.flex {
-        display: flex;
-        flex-direction: column;
-
-        & .date {
-            margin-left: auto;
-        }
-    }
-
     &.stays {
         display: grid;
-        grid-template-columns: 1fr fit-content(160px) 1fr;
+        grid-template-columns: fit-content(20%) fit-content(80%);
         grid-gap: 1rem;
 
-        & .fly-away {
-            border: pixel-to-rem(1px) solid $kpg-border-color;
-            border-radius: 0.5rem;
-            padding: 1rem;
-
-            & iframe {
-                border: none;
-                overflow: hidden;
-                width: 100%;
-                min-height: pixel-to-rem(375px);
-            }
-        }
-
         & .points {
-            min-height: pixel-to-rem(620px);
             width: 100%;
             & a {
                 margin: 0;
@@ -143,7 +120,6 @@
             padding: 1rem;
 
             & figure {
-                min-height: pixel-to-rem(225px);
                 overflow: hidden;
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
@@ -181,8 +157,6 @@
 
     & .flights,
     & .cars {
-        display: flex;
-        justify-content: center;
         background-color: $kpg-light-background-color;
         background-size: cover;
         padding: 2rem;
@@ -206,7 +180,33 @@
             border: none;
             overflow: hidden;
             width: 100%;
-            min-height: pixel-to-rem(590px);
+            min-height: pixel-to-rem(448px);
+        }
+    }
+
+    & .cars {
+        display: flex;
+    }
+
+    & .flights {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+        & .flex {
+            display: flex;
+            flex-direction: column;
+            width: pixel-to-rem(768px);
+
+            & .date {
+                padding-right: pixel-to-rem(12px);
+                margin-left: auto;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
 }
@@ -265,7 +265,12 @@
         position: static;
         padding: 0;
     }
-    .widgets .flights iframe,
+    .widgets .flights .flex {
+        width: fit-content;
+    }
+    .widgets .flights iframe {
+        min-height: pixel-to-rem(600px);
+    }
     .widgets .cars iframe {
         min-height: pixel-to-rem(575px);
         width: fit-content;
@@ -277,6 +282,7 @@
     .widgets .cars .caption {
         display: none;
     }
+    .widgets .flights,
     .widgets.stays {
         grid-template-columns: 1fr;
         text-align: center;

@@ -7,21 +7,12 @@ export function Stays() {
     return (
         <main className="wrapper">
             <section className="hero stays">
-                <h1>Book Flights and Stays</h1>
+                <h1>Book Stays</h1>
                 <article>
-                    <p>
-                        Search for flights and stays. Book your flights and
-                        accommodation.
-                    </p>
+                    <p>Search for stays... book your accommodations.</p>
                 </article>
             </section>
             <section className="widgets stays" id="widgets">
-                <div className="fly-away">
-                    <iframe title="Flights" src="way-away.html"></iframe>
-                    <div className="caption">
-                        <h3>Book your Flight</h3>
-                    </div>
-                </div>
                 <div className="points">
                     <a
                         href="https://tp.media/click?shmarker=399623&promo_id=4491&source_type=banner&type=click&campaign_id=155&trs=200561"
