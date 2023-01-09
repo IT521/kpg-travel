@@ -3,13 +3,13 @@ import './pages.scss';
 import hotelRoom from '../assets/photos/hotel-room.jpg';
 import { Widgets } from '../components';
 
-export function Stays() {
+export function Hotels() {
     return (
         <main className="wrapper">
             <section className="hero stays">
-                <h1>Book Stays</h1>
+                <h1>Book Accommodations</h1>
                 <article>
-                    <p>Search for stays... book your accommodations.</p>
+                    <p>Search and book your accommodations.</p>
                 </article>
             </section>
             <section className="widgets stays" id="widgets">
