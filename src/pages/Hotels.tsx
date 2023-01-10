@@ -1,6 +1,7 @@
 import './pages.scss';
 
-import hotelRoom from '../assets/photos/hotel-room.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import { Widgets } from '../components';
 
 export function Hotels() {
@@ -9,7 +10,7 @@ export function Hotels() {
             <section className="hero stays">
                 <h1>Book Accommodations</h1>
                 <article>
-                    <p>Search and book your accommodations.</p>
+                    <p>Find and book your accommodations.</p>
                 </article>
             </section>
             <section className="widgets stays" id="widgets">
@@ -29,8 +30,11 @@ export function Hotels() {
                 </div>
                 <div className="hotels">
                     <figure>
-                        {/* Photo by Point3D Commercial Imaging Ltd at https://images.unsplash.com/photo-1631049552057-403cdb8f0658 */}
-                        <img src={hotelRoom} alt="hotel room" />
+                        {/* Photo by Point3D Commercial Imaging Ltd on Unsplash */}
+                        <LazyLoadImage
+                            src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658"
+                            alt="hotel room"
+                        />
                         <figcaption>
                             <h3>Exclusive Hotel Deals</h3>
                         </figcaption>

@@ -1,13 +1,7 @@
 import './pages.scss';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
-
-import cars from '../assets/photos/cars.jpg';
-import cruiseShip from '../assets/photos/cruise-ship.jpg';
-import departures from '../assets/photos/departures.jpg';
-import resort from '../assets/photos/resort-pool.jpg';
-import travelMap from '../assets/photos/travel-map.jpg';
-import villa from '../assets/photos/villa.jpg';
 
 export function Home() {
     return (
@@ -27,8 +21,13 @@ export function Home() {
                 <ul>
                     <li>
                         <figure>
-                            {/* Photo by Adam Gonzales at https://images.unsplash.com/photo-1588151626366-a2df693aa0a7 */}
-                            <img src={cruiseShip} alt="cruise ship" />
+                            {/* Photo by Adam Gonzales on Unsplash */}
+                            <LazyLoadImage
+                                src="https://images.unsplash.com/photo-1588151626366-a2df693aa0a7"
+                                alt="cruise ship"
+                                width={486}
+                                height={324}
+                            />
                             <figcaption>
                                 <h3>Cruises</h3>
                             </figcaption>
@@ -40,8 +39,13 @@ export function Home() {
                     </li>
                     <li>
                         <figure>
-                            {/* Photo by Matthew Smith at https://images.unsplash.com/photo-1421789497144-f50500b5fcf0 */}
-                            <img src={departures} alt="airline departures" />
+                            {/* Photo by Matthew Smith on Unsplash */}
+                            <LazyLoadImage
+                                src="https://images.unsplash.com/photo-1421789497144-f50500b5fcf0"
+                                alt="airline departures"
+                                width={486}
+                                height={324}
+                            />
                             <figcaption>
                                 <h3>Flights</h3>
                             </figcaption>
@@ -51,19 +55,29 @@ export function Home() {
                     </li>
                     <li>
                         <figure>
-                            {/* Photo by Sasha Kaunas at https://images.unsplash.com/photo-1584132967334-10e028bd69f7 */}
-                            <img src={resort} alt="resort pool" />
+                            {/* Photo by Sasha Kaunas on Unsplash */}
+                            <LazyLoadImage
+                                src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7"
+                                alt="resort pool"
+                                width={486}
+                                height={324}
+                            />
                             <figcaption>
                                 <h3>Hotels</h3>
                             </figcaption>
                         </figure>
-                        <p>Book your flights and accommodation together</p>
+                        <p>Book your accommodations</p>
                         <Link to="/stays">Hotels</Link>
                     </li>
                     <li>
                         <figure>
-                            {/* Photo by Ciudad Maderas at https://images.unsplash.com/photo-1564501049412-61c2a3083791 */}
-                            <img src={villa} alt="villa" />
+                            {/* Photo by Ciudad Maderas on Unsplash */}
+                            <LazyLoadImage
+                                src="https://images.unsplash.com/photo-1564501049412-61c2a3083791"
+                                alt="villa"
+                                width={486}
+                                height={324}
+                            />
                             <figcaption>
                                 <h3>Villas</h3>
                             </figcaption>
@@ -75,8 +89,13 @@ export function Home() {
                     </li>
                     <li>
                         <figure>
-                            {/* Photo by Carles Rabada at https://images.unsplash.com/photo-1570636802145-8cda1335fe54 */}
-                            <img src={cars} alt="cars" />
+                            {/* Photo by Carles Rabada on Unsplash */}
+                            <LazyLoadImage
+                                src="https://images.unsplash.com/photo-1570636802145-8cda1335fe54"
+                                alt="cars"
+                                width={486}
+                                height={324}
+                            />
                             <figcaption>
                                 <h3>Car Rentals</h3>
                             </figcaption>
@@ -88,8 +107,13 @@ export function Home() {
                     </li>
                     <li>
                         <figure>
-                            {/* Photo by Charlotte Noelle at https://images.unsplash.com/photo-1578894381163-e72c17f2d45f */}
-                            <img src={travelMap} alt="travel map" />
+                            {/* Photo by Charlotte Noelle on Unsplash */}
+                            <LazyLoadImage
+                                src="https://images.unsplash.com/photo-1578894381163-e72c17f2d45f"
+                                alt="travel map"
+                                width={486}
+                                height={324}
+                            />
                             <figcaption>
                                 <h3>Insure It</h3>
                             </figcaption>

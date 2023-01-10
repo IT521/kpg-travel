@@ -1,5 +1,7 @@
 import './pages.scss';
 
+import { Widgets } from '../components';
+
 export function Cars() {
     return (
         <main className="wrapper">
@@ -40,6 +42,7 @@ export function Cars() {
                     </div>
                 </div>
             </section>
+            <Widgets />
         </main>
     );
 }

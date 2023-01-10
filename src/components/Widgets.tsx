@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import { FIGURES } from './model';
 
 export function Widgets() {
@@ -17,10 +19,12 @@ export function Widgets() {
                         <li key={FIGURES[index].id}>
                             <figure>
                                 {/* Photo on Unsplash */}
-                                <img
+                                <LazyLoadImage
                                     src={FIGURES[index].src}
                                     alt={FIGURES[index].alt}
-                                ></img>
+                                    width={486}
+                                    height={623}
+                                ></LazyLoadImage>
                                 <figcaption className="tooltip">
                                     <h3>{FIGURES[index].caption}</h3>
                                     <span className="tooltip-text">

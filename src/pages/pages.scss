@@ -9,23 +9,27 @@
     align-items: center;
     padding: 4rem 2rem;
 
-    /* Photo by Pedro Monteiro at https://images.unsplash.com/photo-1515238152791-8216bfdf89a7 */
-    background: url('../assets/photos/beach.jpg') center;
+    /* Photo by Pedro Monteiro on Unsplash */
+    background: url('https://images.unsplash.com/photo-1515238152791-8216bfdf89a7')
+        center;
     background-size: cover;
 
     &.flights {
-        /* Photo by Matthew Smith at https://images.unsplash.com/photo-1421789497144-f50500b5fcf0 */
-        background: url('../assets/photos/departures.jpg') center;
+        /* Photo by Matthew Smith on Unsplash */
+        background: url('https://images.unsplash.com/photo-1421789497144-f50500b5fcf0')
+            center;
     }
 
     &.cars {
-        /* Photo by Carles Rabada at https://images.unsplash.com/photo-1570636802145-8cda1335fe54 */
-        background: url('../assets/photos/cars.jpg') center;
+        /* Photo by Carles Rabada on Unsplash */
+        background: url('https://images.unsplash.com/photo-1570636802145-8cda1335fe54')
+            center;
     }
 
     &.stays {
-        /* Photo by Sasha Kaunas at https://images.unsplash.com/photo-1584132967334-10e028bd69f7 */
-        background: url('../assets/photos/resort-pool.jpg') center;
+        /* Photo by Sasha Kaunas on Unsplash */
+        background: url('https://images.unsplash.com/photo-1584132967334-10e028bd69f7')
+            center;
     }
 
     & * {
@@ -257,6 +261,9 @@
 }
 
 @media (max-width: 414px) {
+    .hero h1 {
+        font-size: 2.275rem;
+    }
     .widgets ul {
         text-align: center;
         display: grid;
