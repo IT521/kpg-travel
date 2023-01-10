@@ -16,7 +16,7 @@ export function Flights() {
             </section>
             <section className="widgets" id="widgets">
                 <div className="flights">
-                    <div className="flex">
+                    <div className="flex fixed">
                         <iframe title="Flights" src="way-away.html"></iframe>
                     </div>
                     <div className="flex">
