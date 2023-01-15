@@ -1,6 +1,6 @@
 import { FigureInterface } from './Figure.interface';
 
-export const FIGURES: Array<FigureInterface> = [
+export const WIDGET_IMAGES: Array<FigureInterface> = [
     {
         id: 'italy-1000',
         src: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963',

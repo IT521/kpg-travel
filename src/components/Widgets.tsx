@@ -1,11 +1,10 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-import { FIGURES } from './model';
+import { WIDGET_IMAGES } from '../model';
+import { getPreviewImage, ImagePreview } from './';
 
 export function Widgets() {
     const indices: Array<number> = [];
     while (indices.length < 3) {
-        let index = getRandomIndex(0, FIGURES.length);
+        let index = getRandomIndex(0, WIDGET_IMAGES.length);
         if (!indices.includes(index)) {
             indices.push(index);
         }
@@ -16,19 +15,19 @@ export function Widgets() {
             <ul>
                 {indices.map((index) => {
                     return (
-                        <li key={FIGURES[index].id}>
+                        <li key={WIDGET_IMAGES[index].id}>
                             <figure>
-                                {/* Photo on Unsplash */}
-                                <LazyLoadImage
-                                    src={FIGURES[index].src}
-                                    alt={FIGURES[index].alt}
-                                    width={486}
-                                    height={623}
-                                ></LazyLoadImage>
+                                <ImagePreview
+                                    preview={getPreviewImage(
+                                        WIDGET_IMAGES[index].id
+                                    )}
+                                    src={WIDGET_IMAGES[index].src}
+                                    alt={WIDGET_IMAGES[index].alt}
+                                ></ImagePreview>
                                 <figcaption className="tooltip">
-                                    <h3>{FIGURES[index].caption}</h3>
+                                    <h3>{WIDGET_IMAGES[index].caption}</h3>
                                     <span className="tooltip-text">
-                                        {FIGURES[index].alt}
+                                        {WIDGET_IMAGES[index].alt}
                                     </span>
                                 </figcaption>
                             </figure>

@@ -1,19 +1,17 @@
 import './pages.scss';
 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-import { Widgets } from '../components';
+import { getPreviewImage, ImagePreview, Widgets } from '../components';
 
 export function Hotels() {
     return (
         <main className="wrapper">
-            <section className="hero stays">
+            <section className="hero hotels">
                 <h1>Book Accommodations</h1>
                 <article>
                     <p>Find and book your accommodations.</p>
                 </article>
             </section>
-            <section className="widgets stays" id="widgets">
+            <section className="widgets hotels" id="widgets">
                 <div className="points">
                     <a
                         href="https://tp.media/click?shmarker=399623&promo_id=4491&source_type=banner&type=click&campaign_id=155&trs=200561"
@@ -28,10 +26,11 @@ export function Hotels() {
                         />
                     </a>
                 </div>
-                <div className="hotels">
+                <div className="rooms">
                     <figure>
                         {/* Photo by Point3D Commercial Imaging Ltd on Unsplash */}
-                        <LazyLoadImage
+                        <ImagePreview
+                            preview={getPreviewImage('hotels-1000')}
                             src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658"
                             alt="hotel room"
                         />

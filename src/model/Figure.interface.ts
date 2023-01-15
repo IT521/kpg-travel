@@ -4,4 +4,7 @@ export interface FigureInterface {
     alt: string;
     caption: string;
     credit?: string;
+    prompt?: string;
+    isExternal?: boolean;
+    href?: string;
 }
