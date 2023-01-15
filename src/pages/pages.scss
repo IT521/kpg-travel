@@ -36,6 +36,10 @@
         color: white;
     }
 
+    &.preview * {
+        color: $kpg-font-color;
+    }
+
     & h1 {
         font-size: 4rem;
         padding-bottom: 1rem;

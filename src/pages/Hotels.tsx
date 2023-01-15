@@ -1,11 +1,31 @@
 import './pages.scss';
 
+import { useEffect } from 'react';
+
 import { getPreviewImage, ImagePreview, Widgets } from '../components';
 
 export function Hotels() {
+    useEffect(() => {
+        const onPageLoad = () => {
+            const preview = window.document.querySelector(
+                'section.hero.preview'
+            );
+            if (preview) {
+                preview.classList.remove('preview');
+            }
+        };
+
+        if (document.readyState === 'complete') {
+            onPageLoad();
+        } else {
+            window.addEventListener('load', onPageLoad);
+            return () => window.removeEventListener('load', onPageLoad);
+        }
+    }, []);
+
     return (
         <main className="wrapper">
-            <section className="hero hotels">
+            <section className="hero hotels preview">
                 <h1>Book Accommodations</h1>
                 <article>
                     <p>Find and book your accommodations.</p>

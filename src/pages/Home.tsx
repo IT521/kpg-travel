@@ -1,14 +1,33 @@
 import './pages.scss';
 
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import { getPreviewImage, ImagePreview } from '../components';
 import { HOME_IMAGES } from '../model';
 
 export function Home() {
+    useEffect(() => {
+        const onPageLoad = () => {
+            const preview = window.document.querySelector(
+                'section.hero.preview'
+            );
+            if (preview) {
+                preview.classList.remove('preview');
+            }
+        };
+
+        if (document.readyState === 'complete') {
+            onPageLoad();
+        } else {
+            window.addEventListener('load', onPageLoad);
+            return () => window.removeEventListener('load', onPageLoad);
+        }
+    }, []);
+
     return (
         <main className="wrapper">
-            <section className="hero">
+            <section className="hero preview">
                 <h1>Need travel?</h1>
                 <article>
                     <p>

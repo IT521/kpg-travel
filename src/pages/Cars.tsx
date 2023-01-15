@@ -1,11 +1,31 @@
 import './pages.scss';
 
+import { useEffect } from 'react';
+
 import { Widgets } from '../components';
 
 export function Cars() {
+    useEffect(() => {
+        const onPageLoad = () => {
+            const preview = window.document.querySelector(
+                'section.hero.preview'
+            );
+            if (preview) {
+                preview.classList.remove('preview');
+            }
+        };
+
+        if (document.readyState === 'complete') {
+            onPageLoad();
+        } else {
+            window.addEventListener('load', onPageLoad);
+            return () => window.removeEventListener('load', onPageLoad);
+        }
+    }, []);
+
     return (
         <main className="wrapper">
-            <section className="hero cars">
+            <section className="hero cars preview">
                 <h1>Rent Cars</h1>
                 <article>
                     <p>
