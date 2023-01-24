@@ -38,6 +38,15 @@ h6 {
     font-family: 'Playfair Display', serif;
 }
 
+ul,
+figure {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    padding-inline-start: 0;
+}
+
 .main-content {
     padding: pixel-to-rem(32px);
 
