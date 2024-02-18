@@ -1,6 +1,7 @@
 import './pages.scss';
 
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 import { Widgets } from '../components';
 
@@ -25,6 +26,17 @@ export function Flights() {
 
     return (
         <main className="wrapper">
+            <Helmet>
+                <title>Flights | KPG Travel</title>
+                <meta
+                    name="description"
+                    content="KPG Travel | Compare and book flights with ease. Discover your next dream destination."
+                />
+                <meta
+                    name="robots"
+                    content="index, follow, max-image-preview:large"
+                />
+            </Helmet>
             <section className="hero flights preview">
                 <h1>Book Flights</h1>
                 <article>

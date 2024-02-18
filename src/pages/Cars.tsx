@@ -1,6 +1,7 @@
 import './pages.scss';
 
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 import { Widgets } from '../components';
 
@@ -25,6 +26,17 @@ export function Cars() {
 
     return (
         <main className="wrapper">
+            <Helmet>
+                <title>Car Rentals | KPG Travel</title>
+                <meta
+                    name="description"
+                    content="KPG Travel | Car rentals for any kind of trip. Compare deals from popular car rental companies."
+                />
+                <meta
+                    name="robots"
+                    content="index, follow, max-image-preview:large"
+                />
+            </Helmet>
             <section className="hero cars preview">
                 <h1>Rent Cars</h1>
                 <article>
