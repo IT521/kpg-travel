@@ -1,6 +1,7 @@
 import './pages.scss';
 
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 import { getPreviewImage, ImagePreview, Widgets } from '../components';
 
@@ -25,6 +26,17 @@ export function Hotels() {
 
     return (
         <main className="wrapper">
+            <Helmet>
+                <title>Hotels | KPG Travel</title>
+                <meta
+                    name="description"
+                    content="KPG Travel | Find and book your accommodations."
+                />
+                <meta
+                    name="robots"
+                    content="index, follow, max-image-preview:large"
+                />
+            </Helmet>
             <section className="hero hotels preview">
                 <h1>Book Accommodations</h1>
                 <article>
